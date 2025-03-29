@@ -1,44 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 1rem 1rem;
-    margin: 0;
-    background-color: #202124;
-    color: #e8eaed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  min-width: 100%;
+  min-height: 100vh;
+  color: black;
+  background-color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-header, main, footer {
-    width: 800px;
-    display: flex;
-    justify-content: center;
-    background-color: #303134;
-    padding: 0 1rem;
+
+main {
+  max-width: 1024px;
+  min-height: 95vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template: repeat(4);
+  gap: 1rem;
 }
-nav {
+#intro {
+  display: flex;
+  gap: 1rem;
+  background-color: aquamarine;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  box-shadow:0px 0px 0.4rem #5f5e5e
+}
+.skills_box {
+  padding: 0.4rem;
+  color: white;
+  background-color: darkslategrey;
+  border-radius: 0.4rem;
+  box-shadow:0px 0px 0.4rem #5f5e5e
+}
+.skills_box > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  list-style: none;
+}
+.skills_box > ul > li {
+  border: 1px solid white;
+  padding: 0.4rem;
+}
+.skills_box > ul > li > img {
+  width: 3rem;
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+#more {
     width: 100%;
+    grid-column: span 3;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav > ul {
-    display: flex;
-    list-style: none;
+    justify-content: center;
     gap:1rem;
 }
-hr {
-    height: 1px;
-    width: 85%;
-    background-color: white;
+.more_box{
+    width: 100%;
+    padding: 0.4rem;
+    color: white;
+    background-color:darkcyan;
+    border-radius: 0.4rem; 
+    box-shadow:0px 0px 0.4rem #5f5e5e
 }
-h1 {
-    color: burlywood;
-}
-.skills{
-    display: flex;
-    justify-content: space-between;
-}
+
 footer > div {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
