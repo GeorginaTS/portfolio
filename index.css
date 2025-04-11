@@ -6,38 +6,52 @@ body {
   min-width: 100%;
   min-height: 100vh;
   color: black;
-  background-color: white;
+  background-color: #0e0e0ee4;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 main {
-  max-width: 1024px;
-  min-height: 95vh;
+  max-width: 1280px;
+  min-height: 90vh;
+  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template: repeat(4);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 1rem;
 }
 #intro {
   display: flex;
+  flex-direction: column;
+  grid-column: span 3;
+  grid-row: span 2;
   gap: 1rem;
-  background-color: aquamarine;
+  background-color: seagreen;
   padding: 1rem;
   border-radius: 0.4rem;
   box-shadow:0px 0px 0.4rem #5f5e5e
 }
+#languages, #organization {
+  grid-column: span 2;
+  background-color: mediumseagreen;
+}
+#hello{
+  grid-column: span 1;
+  grid-row: span 2;
+  background-color: darkslategrey;
+}
 .skills_box {
   padding: 0.4rem;
   color: white;
-  background-color: darkslategrey;
+  background-color: olivedrab;
   border-radius: 0.4rem;
-  box-shadow:0px 0px 0.4rem #5f5e5e
+  box-shadow:0px 0px 0.4rem #5f5e5e;
+  grid-column: span 2;
 }
 .skills_box > ul {
+  padding: 0.6rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -45,21 +59,20 @@ main {
   list-style: none;
 }
 .skills_box > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid white;
+  background-color: white;
+  border-radius: 0.4rem;
   padding: 0.4rem;
 }
 .skills_box > ul > li > img {
   width: 3rem;
 }
-#intro {
-  display: flex;
-  flex-direction: column;
-  grid-column: span 2;
-  grid-row: span 2;
-}
 #more {
     width: 100%;
-    grid-column: span 3;
+    grid-column: span 6;
     display: flex;
     justify-content: center;
     gap:1rem;
@@ -68,11 +81,12 @@ main {
     width: 100%;
     padding: 0.4rem;
     color: white;
-    background-color:darkcyan;
+    background-color:seagreen;
     border-radius: 0.4rem; 
     box-shadow:0px 0px 0.4rem #5f5e5e
 }
 
 footer > div {
+  color: whitesmoke;
   padding: 0.5rem;
 }
