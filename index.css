@@ -17,6 +17,11 @@ hr {
   width: 100%;
   margin: 0.6rem 0;
 }
+h4{
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.4rem 0;
+}
 main {
   max-width: 1280px;
   min-height: 90vh;
@@ -38,9 +43,23 @@ main {
   border-radius: 0.4rem;
   box-shadow: 0px 0px 0.4rem #5f5e5e;
 }
-#intro >ul {
-  width: 80%;
-  margin-left: 4rem;
+#contact {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.8rem;
+}
+#contact > a {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 100%;
+  padding: 0.6rem;
+}
+#contact > a > img {
+  width: 2rem;
 }
 #languages {
   min-height: fit-content;
@@ -49,7 +68,7 @@ main {
   background-color: mediumseagreen;
 }
 #languages > ul > li > img {
-  width: 3.2rem;
+  width: 3.6rem;
 }
 #organization {
   grid-column: span 1;
@@ -58,14 +77,29 @@ main {
 #hello {
   grid-column: span 1;
   background-color: darkslategrey;
+  display: flex;
+  flex-direction: column;
+  gap:0.4rem;
+  justify-content: space-between;
 }
-#info {
-  grid-column: span 6;
-  background-color: darkolivegreen;
-  min-height: 1rem;
+#intro > div > ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+#intro > div > ul > li {
+  background-color: rgba(255, 255, 255, 0.474);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  width:25%;
+  height: 100%;
 }
 .skills_box {
-  min-height: fit-content;
+  /* min-height: fit-content; */
   padding: 0.8rem;
   color: white;
   background-color: olivedrab;
