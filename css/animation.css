@@ -1,0 +1,22 @@
+
+/* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes rollOverIcons {
+  0% {
+    scale: 0.9;
+  }
+  80% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}

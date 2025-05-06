@@ -1,3 +1,7 @@
+@import './css/intro.css';
+@import './css/skills.css';
+@import './css/animation.css';
+
 * {
   padding: 0;
   margin: 0;
@@ -17,7 +21,7 @@ hr {
   width: 100%;
   margin: 0.6rem 0;
 }
-h4{
+h4 {
   font-weight: bold;
   font-size: 1.2rem;
   padding: 0.4rem 0;
@@ -25,124 +29,14 @@ h4{
 main {
   max-width: 1280px;
   min-height: 90vh;
-  padding: 1.5rem;
+  padding: 0.8rem;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4);
-  gap: 1.3rem;
+  gap: 0.8rem;
+  border: 2px solid yellow ;
+  background-color: darkslategray;
 }
-#intro {
-  display: flex;
-  flex-direction: column;
-  grid-column: span 4;
 
-  gap: 1rem;
-  color: whitesmoke;
-  background-color: seagreen;
-  padding: 1rem;
-  border-radius: 0.4rem;
-  box-shadow: 0px 0px 0.4rem #5f5e5e;
-}
-#contact {
-  display: flex;
-  gap: 0.6rem;
-  padding: 0.8rem;
-}
-#contact > a {
-  width: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid white;
-  background-color: white;
-  border-radius: 100%;
-  padding: 0.6rem;
-}
-#contact > a > img {
-  width: 2rem;
-}
-#languages {
-  min-height: fit-content;
-  grid-column: span 1;
-  grid-row: span 1;
-  background-color: mediumseagreen;
-}
-#languages > ul > li > img {
-  width: 3.6rem;
-}
-#organization {
-  grid-column: span 1;
-  background-color: mediumseagreen;
-}
-#hello {
-  grid-column: span 1;
-  background-color: darkslategrey;
-  display: flex;
-  flex-direction: column;
-  gap:0.4rem;
-  justify-content: space-between;
-}
-#intro > div > ul {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  list-style: none;
-}
-#intro > div > ul > li {
-  background-color: rgba(255, 255, 255, 0.474);
-  padding: 1rem;
-  border-radius: 0.4rem;
-  width:25%;
-  height: 100%;
-}
-.skills_box {
-  /* min-height: fit-content; */
-  padding: 0.8rem;
-  color: white;
-  background-color: olivedrab;
-  border-radius: 0.4rem;
-  box-shadow: 0px 0px 0.4rem #5f5e5e;
-  grid-column: span 2;
-}
-.skills_box > ul {
-  padding: 0.6rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  gap: 0.4rem;
-  list-style: none;
-}
-.skills_box > ul > li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid white;
-  background-color: white;
-  border-radius: 0.4rem;
-  padding: 0.4rem;
-}
-.skills_box > ul > li > img {
-  width: 3rem;
-}
-#more {
-  width: 100%;
-  height: fit-content;
-  grid-column: span 6;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-.more_box {
-  width: 100%;
-  padding: 0.8rem;
-  color: white;
-  background-color: seagreen;
-  border-radius: 0.4rem;
-  box-shadow: 0px 0px 0.4rem #5f5e5e;
-}
 
 footer > div {
   color: whitesmoke;
