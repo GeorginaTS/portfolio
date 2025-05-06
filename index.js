@@ -1,8 +1,10 @@
 const skillsBoxes = document.getElementById("skill-boxes");
+
+
 const descHtml = document.querySelectorAll(".desc-html");
 descHtml.forEach((item) => {
   item.addEventListener("mouseover", () => {
-    skillsDescMove(2);
+    skillsDescMove(0);
   });
 });
 const descVue = document.querySelectorAll(".desc-vue");
@@ -49,3 +51,4 @@ descAzure.addEventListener("mouseover", () => {
 const skillsDescMove = (x) => {
   skillsBoxes.style.left = x + "vw";
 };
+skillsDescMove(0);
