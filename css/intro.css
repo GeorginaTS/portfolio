@@ -66,3 +66,42 @@
     border-radius: 0.4rem;
     height: 100%;
   }
+  .stack_box {
+    padding: 0.4rem 0.8rem;
+    color: white;
+    background-color: olivedrab;
+    border-radius: 0.4rem;
+    box-shadow: 0px 0px 0.4rem #5f5e5e;
+    grid-column: span 2;
+  }
+  .stack_box > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 0.4rem;
+    list-style: none;
+  }
+  .stack_box > ul > li {
+    width: 3.6rem;  
+    height: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.4rem;
+    padding: 0.4rem; 
+  }
+  .stack_box > ul > li:hover {
+    border: 1px solid rgb(7, 97, 19);
+    /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
+    animation: rollOverIcons 1s ease-in-out;
+  }
+  .stack_box > ul > li > img {
+    width: 3.6rem;
+    /* aspect-ratio: 1/1; */
+  }
+
+  #stack {
+    grid-column: span 1;
+    background-color: mediumseagreen;
+  }

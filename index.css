@@ -33,7 +33,7 @@ main {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 0.8rem;
-  border: 2px solid yellow ;
+  border-radius: 1rem;
   background-color: darkslategray;
 }
 

@@ -1,10 +1,4 @@
-#stack {
-  grid-column: span 1;
-  background-color: mediumseagreen;
-}
-#stack > ul > li > img {
-  width: 3.6rem;
-}
+
 .skills_box {
   padding: 0.4rem 0.8rem;
   color: white;
