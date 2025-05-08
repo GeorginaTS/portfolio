@@ -1,5 +1,5 @@
 ## Georgina Portfolio
-linkedin: [www.linkedin.com/georgina-tomas](https://www.linkedin.com/in/georgina-tomas/)
+https://georginats.github.io/portfolio/
 
 
 ## Bento Grid with all you need to know about me. ## 
