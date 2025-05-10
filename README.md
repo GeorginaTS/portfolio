@@ -6,4 +6,4 @@ linkedin: [www.linkedin.com/georgina-tomas](https://www.linkedin.com/in/georgina
 You can also speak with my chatbot.
 
 > [!IMPORTANT]  
-> I create this mini website, with only html, css, and javascript. 
+> I create this tiny website, with only html, css, and javascript. 
