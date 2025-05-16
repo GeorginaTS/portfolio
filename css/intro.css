@@ -1,107 +1,103 @@
+#hello {
+  height: 92%;
+  grid-column: span 1;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  display: flex;
+  background-color: var(--color-tertiary);
+  flex-direction: column;
+  gap: 0.4rem;
+  justify-content: space-between;
+}
+#welcome {
+  color: var(--color-text);
+  overflow: hidden;
+  animation: typing 1s steps(7);
+}
 
+#contact {
+  display: flex;
+  gap: 0.6rem;
+}
+#contact > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 100%;
+  padding: 0.6rem;
+}
+#contact > a > img {
+  width: 2rem;
+}
 #intro {
-    display: flex;
-    flex-direction: column;
-    grid-column: span 4;
-    gap: 1rem;
-    color: whitesmoke;
-    background-color: seagreen;
-    padding: 1rem;
-    border-radius: 0.4rem;
-    box-shadow: 0px 0px 0.4rem #5f5e5e;
-  }
-  #contact {
-    display: flex;
-    gap: 0.6rem;
-    padding: 0.8rem;
-  }
-  #contact > a {
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 100%;
-    padding: 0.6rem;
-  }
-  #contact > a > img {
-    width: 2rem;
-  }
+  display: flex;
+  flex-direction: column;
+  grid-column: span 4;
+  gap: 1rem;
+  color: var(--color-text);
+  background-color: var(--color-primary);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 0.4rem var(--color-primary);
+}
 
-  #hello {
-    grid-column: span 1;
-    display: flex;
-    background-color: teal;
-    flex-direction: column;
-    gap:0.4rem;
-    justify-content: space-between;
-  }
-  #welcome {
-    width: 100%;
-    color: rgb(255, 255, 255);
-    overflow: hidden;           /* Evita que es vegi el text complet abans d'hora */
-    white-space: nowrap;        /* Manté el text en una sola línia */
-    /* border-right: 2px solid;    Simula el cursor */
-    animation: typing 1s steps(7);
-  }
-  #intro > article > h4 {
-    overflow: hidden;    
-    white-space: nowrap;      
-    animation: typing 3s steps(37);
-    animation-fill-mode: backwards;
-  }
-  #soft-skills > ul {
-    min-width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    list-style: none;
-    height: max-content;
-  }
-  #soft-skills > ul > li {
-    background-color: rgba(255, 255, 255, 0.474);
-    padding: 1rem;
-    border-radius: 0.4rem;
-    height: 100%;
-  }
-  .stack_box {
-    padding: 0.4rem 0.8rem;
-    color: white;
-    background-color: olivedrab;
-    border-radius: 0.4rem;
-    box-shadow: 0px 0px 0.4rem #5f5e5e;
-    grid-column: span 2;
-  }
-  .stack_box > ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 0.4rem;
-    list-style: none;
-  }
-  .stack_box > ul > li {
-    width: 3.6rem;  
-    height: 3.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 0.4rem;
-    padding: 0.4rem; 
-  }
-  .stack_box > ul > li:hover {
-    border: 1px solid rgb(7, 97, 19);
-    /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
-    animation: rollOverIcons 1s ease-in-out;
-  }
-  .stack_box > ul > li > img {
-    width: 3.6rem;
-    /* aspect-ratio: 1/1; */
-  }
+#intro > article > h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(37);
+  animation-fill-mode: backwards;
+}
 
-  #stack {
-    grid-column: span 1;
-    background-color: mediumseagreen;
-  }
+#soft-skills > ul {
+  min-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  height: max-content;
+}
+#soft-skills > ul > li {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  width: 30%;
+  height: 100%;
+}
+#stack {
+  height: 91%;
+  grid-column: span 1;
+  padding: 1rem;
+  color: var(--color-text);
+  background-color: var(--color-tertiary);
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 0.4rem #5f5e5e;
+}
+#stack > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 0.4rem;
+  list-style: none;
+}
+#stack > ul > li {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+}
+#stack > ul > li:hover {
+  border: 1px solid rgb(7, 97, 19);
+  /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
+  animation: rollOverIcons 1s ease-in-out;
+}
+#stack > ul > li > img {
+  width: 3.6rem;
+  /* aspect-ratio: 1/1; */
+}

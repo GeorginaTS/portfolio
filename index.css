@@ -1,17 +1,28 @@
-@import './css/intro.css';
-@import './css/skills.css';
-@import './css/animation.css';
+@import "./css/intro.css";
+@import "./css/skills.css";
+@import "./css/animation.css";
 
 * {
   padding: 0;
   margin: 0;
 }
+:root {
+  --color-background: #172a3a;
+  --color-primary: #247b7b;
+  --color-secondary: #004346;
+  --color-tertiary: #508991;
+  --color-accent: #44a1a0;
+  --color-text: #def4e4;
+  --color-text-dark: #172a3a;
+}
 body {
   min-width: 100%;
   min-height: 100vh;
-  color: black;
-  background-color: #0e0e0ee4;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,24 +32,35 @@ hr {
   width: 100%;
   margin: 0.6rem 0;
 }
+h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.4rem 0;
+  color: var(--color-background)
+}
 h4 {
   font-weight: bold;
   font-size: 1.2rem;
   padding: 0.4rem 0;
+  color: var(--color-background)
 }
 main {
   max-width: 1280px;
-  min-height: 90vh;
-  padding: 0.8rem;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 0.8rem;
-  border-radius: 1rem;
-  background-color: darkslategray;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
 }
-
-
-footer > div {
-  color: whitesmoke;
-  padding: 0.5rem;
-}
+main > div {
+    width: 100%;
+    height: 100%;
+    padding: 0.6rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.8rem;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--color-secondary);
+  }
