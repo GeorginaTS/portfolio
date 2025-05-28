@@ -12,7 +12,6 @@
   flex-wrap: wrap;
   justify-content: start;
   gap: 0.4rem;
-  list-style: none;
   padding: 0.8rem;
 }
 .skills_box > ul > li {
@@ -25,6 +24,9 @@
   background-color: white;
   border-radius: 0.4rem;
   padding: 0.4rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 0px 0.2rem #5f5e5e;
 }
 .skills_box > ul > li:hover {
   animation: rollOverIcons 1s ease-in-out;
@@ -33,7 +35,7 @@
   width: 100%;
   /* aspect-ratio: 1/1; */
 }
-#skill-desc {
+#skill-desc-section {
   min-height: 25vh;
   height: fit-content;
   grid-column: span 6;
@@ -50,16 +52,15 @@
   transition: ease-in-out 1s;
 }
 .shadow-overlay {
-
   width: 105%;
   position: absolute;
   top: 0; left: -1rem; right: -10rem; bottom: 0;
   pointer-events: none;
-  z-index: 10;
+  z-index: 5;
   background: linear-gradient(
-    to right,
+    to left,
     rgba(0,0,0,0.25) 0%,
-    rgba(0,0,0,0) 20%,
+    rgba(0,0,0,0) 8%,
     rgba(0,0,0,0) 92%,
     rgba(0,0,0,0.25) 100%
   );
@@ -70,9 +71,11 @@
   background-color: var(--color-primary);
   padding: 1rem;
 }
-#skill-boxes > article:hover {
+/* #skill-boxes > article:hover {
   transform: scale(1.2);
   background-color: var(--color-accent);
   box-shadow: 0px 0px 0.4rem var(--color-primary);
   transition: ease-in-out 0.4s;
-}
+  z-index: 10;
+  cursor: pointer;
+} */

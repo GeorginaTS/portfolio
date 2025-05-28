@@ -1,54 +1,82 @@
+
+// +++ event listeners +++
+
 const skillsBoxes = document.getElementById("skill-boxes");
 
-
-const descHtml = document.querySelectorAll(".desc-html");
+//Skills buttons
+const descHtml = document.querySelectorAll(".btn-html");
 descHtml.forEach((item) => {
   item.addEventListener("mouseover", () => {
-    skillsDescMove(0);
+    skillsDescMove(15);
+    const skill = document.getElementById("htmlcss");
+    skill.addEventListener("mouseover", () => {
+      
+    });
+    skill.addEventListener("mouseout", () => {
+
+    });
   });
 });
-const descVue = document.querySelectorAll(".desc-vue");
+const descVue = document.querySelectorAll(".btn-vue");
 descVue.forEach((item) => {
   item.addEventListener("mouseover", () => {
-    skillsDescMove(-50);
+    skillsDescMove(-38);
   });
 });
-const descReact = document.getElementById("desc-react");
+const descReact = document.getElementById("btn-react");
 descReact.addEventListener("mouseover", () => {
-    skillsDescMove(-100);
+    skillsDescMove(-92);
   });
 
-const descExpress = document.getElementById("desc-express");
+const descExpress = document.getElementById("btn-express");
 descExpress.addEventListener("mouseover", () => {
-    skillsDescMove(-150);
+    skillsDescMove(-143);
   });
 
-const descSql = document.getElementById("desc-sql");
+const descSql = document.getElementById("btn-sql");
 descSql.addEventListener("mouseover", () => {
-  skillsDescMove(-200);
+  skillsDescMove(-197);
 });
-const descMongo = document.getElementById("desc-mongo");
+const descMongo = document.getElementById("btn-mongo");
 descMongo.addEventListener("mouseover", () => {
   skillsDescMove(-250);
 });
-const descNest = document.getElementById("desc-nest");
+const descNest = document.getElementById("btn-nest");
 descNest.addEventListener("mouseover", () => {
-  skillsDescMove(-300);
+  skillsDescMove(-303);
 });
-const descGit = document.getElementById("desc-git");
+const descGit = document.getElementById("btn-git");
 descGit.addEventListener("mouseover", () => {
-  skillsDescMove(-350);
+  skillsDescMove(-355);
 });
 
-const descAws = document.getElementById("desc-aws");
+const descAws = document.getElementById("btn-aws");
 descAws.addEventListener("mouseover", () => {
-  skillsDescMove(-400);
+  skillsDescMove(-408);
 });
-const descAzure = document.getElementById("desc-azure");
+const descAzure = document.getElementById("btn-azure");
 descAzure.addEventListener("mouseover", () => {
-  skillsDescMove(-450);
+  skillsDescMove(-460);
 });
+
+// ----- FUNCTIONS -----
+// Function to move the skills description boxes
 const skillsDescMove = (x) => {
   skillsBoxes.style.left = x + "vw";
+  skillsBoxes.style.transition = "all 0.3s ease-in";
 };
 skillsDescMove(0);
+
+// const skillDescGrow = (skill) => {
+//     skill.addEventListener("mouseover", () => {
+//       skill.style.scale = "1.1";
+//       skill.style.transition = "all 0.3s ease-in-out ";
+//     });
+//     skill.addEventListener("mouseout", () => {
+//       skill.style.scale = "1";
+//       skill.style.transition = "all 0.3s ease-in-out";
+//     //   skill.removeEventListener("mouseover");
+//     //   skill.removeEventListener("mouseout");
+//      }
+//     );
+// }

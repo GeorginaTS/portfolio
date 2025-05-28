@@ -78,3 +78,18 @@ main > div {
   border-radius: 1rem;
   background-color: var(--color-background);
 }
+ul {
+  list-style: none;
+}
+#hello > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+#hello > div > img {
+  width: 100%;
+  max-height: 12rem;
+  object-fit: contain;
+  border-radius: 0.4rem;
+} 
