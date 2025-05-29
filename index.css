@@ -57,7 +57,7 @@ h4 {
   font-weight: bold;
   font-size: 1.2rem;
   padding: 0.4rem 0;
-  color: var(--color-background);
+  color: var(--color-text);
 }
 main {
   max-width: 1280px;
@@ -80,9 +80,15 @@ main > div {
   border-radius: 1rem;
   background-color: var(--color-background);
 }
+a {
+  text-decoration: none;
+  color: var(--color-text);
+  transition: color 0.3s ease-in-out;
+}
 ul {
   list-style: none;
 }
+
 #hello {
   animation-name: show;
   animation-fill-mode: forwards;
