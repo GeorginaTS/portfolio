@@ -5,6 +5,7 @@
 * {
   padding: 0;
   margin: 0;
+
 }
 :root {
   --color-background: rgb(23, 42, 58);
@@ -89,21 +90,3 @@ ul {
   list-style: none;
 }
 
-#hello {
-  animation-name: show;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-}
-#hello > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-#hello > div > img {
-  width: 12rem;
-  height: 12rem;
-  object-fit: cover;
-  object-position: 50% 10%; /* Centrat horitzontalment, 10% des de la part superior */
-  border-radius: 50%;
-} 
