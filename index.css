@@ -16,6 +16,8 @@
   --color-text-dark: #172a3a;
 }
 body {
+  content-visibility: auto;
+  contain-intrinsic-size: 100vw 100vh;
   min-width: 100%;
   min-height: 100vh;
   font-family: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
@@ -81,11 +83,16 @@ main > div {
 ul {
   list-style: none;
 }
+#hello {
+  animation-name: show;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
 #hello > div {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 }
 #hello > div > img {
   width: 12rem;

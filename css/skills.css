@@ -6,6 +6,10 @@
   box-shadow: 0px 0px 0.4rem #5f5e5e;
   grid-column: span 2;
   height: 92%;
+  animation-name: show;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
 }
 .skills_box > ul {
   display: flex;
@@ -42,6 +46,10 @@
   color: var(--color-text);
   border-radius: 0.4rem;
   position: relative;
+  animation-name: show;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
 }
 #skill-boxes {
   display: flex;
