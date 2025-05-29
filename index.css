@@ -7,7 +7,7 @@
   margin: 0;
 }
 :root {
-  --color-background: #172a3a;
+  --color-background: rgb(23, 42, 58);
   --color-primary: #247b7b;
   --color-secondary: #004346;
   --color-tertiary: #508991;
@@ -91,5 +91,6 @@ ul {
   width: 12rem;
   height: 12rem;
   object-fit: cover;
+  object-position: 50% 10%; /* Centrat horitzontalment, 10% des de la part superior */
   border-radius: 50%;
 } 
