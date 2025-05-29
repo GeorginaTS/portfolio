@@ -11,11 +11,16 @@
   "@graph": [
     {
       "@type": "WebSite",
-      <!-- "@id": "https://www.elteuportfoli.com/#website", // ID únic per referenciar -->
-      "url": "https://www.elteuportfoli.com/",
+      <!-- "@id": "https://georginats.github.io/portfolio/#website", // ID únic per referenciar -->
+      "url": "https://georginats.github.io/portfolio/",
       "name": "Portfoli de Georgina Tomas",
-      "alternateName": "Georgina Tomas - Desenvolupadora Full Stack",
-      "description": "Una breu descripció del teu portfoli i el que ofereixes.",
+      "alternateName": "Georgina Tomas - Full Stack Developer",
+      "description": "Georgina Tomas's professional portfolio showcasing her skills and projects as a Full Stack Developer.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://georginats.github.io/portfolio/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
       "publisher": {
         "@type": "Person", 
         "name": "Georgina Tomas", 
