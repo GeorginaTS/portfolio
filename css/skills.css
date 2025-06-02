@@ -5,9 +5,8 @@
   border-radius: 0.4rem;
   box-shadow: 0px 0px 0.4rem #5f5e5e;
   grid-column: span 2;
-  height: 92%;
-  animation-name: show;
-  animation-fill-mode: forwards;
+  animation-name: showBottom;
+  animation-fill-mode: backwards;
   animation-duration: 1s;
   animation-delay: 0.6s;
 }
@@ -46,8 +45,8 @@
   color: var(--color-text);
   border-radius: 0.4rem;
   position: relative;
-  animation-name: show;
-  animation-fill-mode: forwards;
+  animation-name: showTop;
+  animation-fill-mode: backwards;
   animation-duration: 1s;
   animation-delay: 0.8s;
 }
@@ -71,12 +70,12 @@
   background: linear-gradient(
     to left,
     var(--color-background) 0%,
-    var(--color-background) 3%,
-    rgb(23, 42, 58, 0) 10%,
-    rgb(23, 42, 58, 0) 92%,
+    var(--color-background) 3.2%,
+    rgb(23, 42, 58, 0) 5%,
+    rgb(23, 42, 58, 0) 97%,
     var(--color-background) 99%,
     var(--color-background) 100%
-  );
+  );  
 }
 #skill-boxes > article {
   min-width: 50vw;

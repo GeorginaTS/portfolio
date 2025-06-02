@@ -90,6 +90,7 @@ a {
 ul {
   list-style: none;
 }
+/* Mini Header -> project section*/
 header {
   grid-column: span 6;
   background-color: var(--color-primary);

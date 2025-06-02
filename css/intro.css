@@ -1,14 +1,13 @@
 #hello {
   background-color: var(--color-tertiary);
   grid-column: span 1;
-  padding: 1rem;
+  padding: 0.8rem;
   border-radius: 0.4rem;
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
   /* justify-content: space-between;   */
   
-  animation-name: show;
+  animation-name: showLeft;
   animation-fill-mode: forwards;
   animation-duration: 1s;
 }
@@ -17,7 +16,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 #hello > div > img {
   width: 12rem;
@@ -58,8 +56,8 @@
   border-radius: 0.4rem;
   box-shadow: 0px 0px 0.4rem var(--color-primary);
 
-  animation-name: show;
-  animation-fill-mode: forwards;
+  animation-name: showBottom;
+  animation-fill-mode: backwards;
   animation-duration: 1s;
   animation-delay: 0.4s;
 }
@@ -98,8 +96,8 @@
   display: flex;
   flex-direction: column; 
   align-items: center;
-  animation-name: show;
-  animation-fill-mode: forwards;
+  animation-name: showRight;
+  animation-fill-mode: backwards;
   animation-duration: 1s;
   /* animation-delay: 0.2s; */
 }
