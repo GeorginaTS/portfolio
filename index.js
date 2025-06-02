@@ -1,3 +1,25 @@
+const projects = false
+const header = document.querySelector("header");
+const hello = document.getElementById("hello");
+const intro = document.getElementById("intro");
+const stack = document.getElementById("stack");
+const skillSection = document.getElementById("skill-desc-section");
+const projectsSection = document.getElementById("projects");
+
+if (!projects) {
+  header.style.display = "none";
+  projectsSection.style.display = "none";
+
+} else {  
+  header.style.display = "flex";
+  hello.style.display = "none";
+  intro.style.display = "none";  
+  stack.style.display = "none";
+  skillSection.style.display = "none";
+}
+
+
+
 
 // +++ event listeners +++
 
@@ -57,6 +79,10 @@ descAws.addEventListener("mouseover", () => {
 const descAzure = document.getElementById("btn-azure");
 descAzure.addEventListener("mouseover", () => {
   skillsDescMove(-460);
+});
+const descDocker = document.getElementById("btn-docker");
+descDocker.addEventListener("mouseover", () => {
+  skillsDescMove(-509);
 });
 
 // ----- FUNCTIONS -----

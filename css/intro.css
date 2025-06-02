@@ -132,8 +132,7 @@
   width: 3.8rem;
   /* aspect-ratio: 1/1; */
 }
-
-#projects {
+#btn-projects {
   background-color: var(--color-secondary);
   border: none;
   color: var(--color-text);
@@ -148,4 +147,5 @@
   justify-content: center;
   align-items: center;
   transition: color 0.3s ease-in-out;
-} 
+}
+

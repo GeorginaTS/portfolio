@@ -1,5 +1,6 @@
 @import "./css/intro.css";
 @import "./css/skills.css";
+@import "./css/projects.css";
 @import "./css/animation.css";
 
 * {
@@ -13,7 +14,7 @@
   --color-secondary: #004346;
   --color-tertiary: #508991;
   --color-accent: #44a1a0;
-  --color-text: #def4e4;
+  --color-text: #ecedec;
   --color-text-dark: #172a3a;
 }
 body {
@@ -88,5 +89,33 @@ a {
 }
 ul {
   list-style: none;
+}
+header {
+  grid-column: span 6;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 0.4rem var(--color-primary);
+  display: none;
+  justify-content:space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header img {
+  width: 2.6rem;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+header ul li {
+  background-color: white;
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
 }
 
