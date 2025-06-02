@@ -143,7 +143,7 @@ button span:nth-child(1){
     width:80%;
     top:0px;
     left:-200px;
-    background: linear-gradient(to right, rgba(0,0,0,0), var(--color-tertiary));
+    background: linear-gradient(to right, rgba(0,0,0,0), var(--color-accent));
     border-top-right-radius: 1px;
     border-bottom-right-radius: 1px;
     animation: span1 2s linear infinite;
@@ -163,7 +163,7 @@ button span:nth-child(2){
     width: 3px;
     top:-70px;
     right:0px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0),var(--color-tertiary));
+    background: linear-gradient(to bottom, rgba(0,0,0,0),var(--color-accent));
     border-bottom-left-radius: 1px;
     border-bottom-right-radius: 1px;
     animation: span2 2s linear infinite;
@@ -182,7 +182,7 @@ button span:nth-child(3){
     width:10rem;
     right:-200px;
     bottom: 0px;
-    background: linear-gradient(to left, rgba(0,0,0,0), var(--color-tertiary));
+    background: linear-gradient(to left, rgba(0,0,0,0), var(--color-accent));
     border-top-left-radius: 1px;
     border-bottom-left-radius: 1px;
     animation: span3 2s linear infinite;
@@ -202,7 +202,7 @@ button span:nth-child(4){
     width:3px;
     bottom:-70px;
     left:0px;
-    background: linear-gradient(to top, rgba(0,0,0,0),var(--color-tertiary));
+    background: linear-gradient(to top, rgba(0,0,0,0),var(--color-accent));
     border-top-right-radius: 1px;
     border-top-left-radius: 1px;
     animation: span4 2s linear infinite;
