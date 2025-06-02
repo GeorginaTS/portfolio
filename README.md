@@ -2,7 +2,7 @@
 
 This is the repository for Georgina Tomás's personal portfolio website, showcasing her skills, projects, and experience as a Full Stack Developer.
 
-
+https://georginats.github.io/portfolio/
 
 
 ## Features
