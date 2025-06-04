@@ -5,10 +5,8 @@
   border-radius: 0.4rem;
   box-shadow: 0px 0px 0.4rem #5f5e5e;
   grid-column: span 2;
-  animation-name: showBottom;
-  animation-fill-mode: backwards;
-  animation-duration: 1s;
-  animation-delay: 0.6s;
+  height: 100%;
+  box-sizing: border-box;
 }
 .skills_box > ul {
   display: flex;
@@ -45,17 +43,15 @@
   color: var(--color-text);
   border-radius: 0.4rem;
   position: relative;
-  animation-name: showTop;
-  animation-fill-mode: backwards;
-  animation-duration: 1s;
-  animation-delay: 0.8s;
 }
 #skill-boxes {
   display: flex;
   gap: 0.8rem;
   position: relative; /* Ensure positioning context */
   z-index: 1;
-  height: 25vh;
+  min-height: 25vh;
+  height: 100%;
+  box-sizing: border-box;
   transition: ease-in-out 1s;
 }
 .shadow-overlay {

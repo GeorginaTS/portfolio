@@ -1,5 +1,5 @@
 
-/* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
+/* animation: show hide classes */
 
 
 @keyframes showRight {
@@ -8,17 +8,28 @@
     transform: translateX(100%);
   }
   to {
-    opacity: 1; ;
+    opacity: 1;
   }
 }
+.showRight {
+  animation-name: showRight;
+  animation-fill-mode: backwards;
+  animation-duration: 1s;
+}
+
 @keyframes showLeft {
   from {
     opacity: 0; 
     transform: translateX(-100%);
   }
   to {
-    opacity: 1; ;
+    opacity: 1; 
   }
+}
+.showLeft {
+  animation-name: showLeft;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 @keyframes showTop {
   from {
@@ -29,6 +40,11 @@
     opacity: 1;
   }
 }
+.showTop {
+  animation-name: showTop;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
 @keyframes showBottom {
   from {
     opacity: 0; 
@@ -36,9 +52,82 @@
   }
   to {
     opacity: 1; 
-   ;
   }
 }
+.showBottom {
+  animation-name: showBottom;
+  animation-fill-mode: backwards;
+  animation-duration: 1s;
+}
+
+@keyframes hideRight {
+  from {
+    opacity: 1; 
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0; 
+    transform: translateX(100%);
+    display: none;
+  }
+}
+.hideRight {
+  animation-name: hideRight;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+} 
+@keyframes hideLeft {
+  from {
+    opacity: 1; 
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0; 
+    transform: translateX(-100%);
+    display: none;
+  }
+}
+.hideLeft {
+  animation-name: hideLeft;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+@keyframes hideTop {
+  from {
+    opacity: 1; 
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0; 
+    transform: translateY(-100%);
+    display: none;
+  }
+} 
+.hideTop {
+  animation-name: hideTop;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+@keyframes hideBottom {
+  from {
+    opacity: 1; 
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0; 
+    transform: translateY(100%);
+    display: none;
+  }
+} 
+.hideBottom {
+  animation-name: hideBottom;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}     
+
+
+
+/* Animation for typing effect */
 @keyframes typing {
   from {
     width: 0;

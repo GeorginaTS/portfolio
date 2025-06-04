@@ -1,24 +1,33 @@
-const projects = false
-const header = document.querySelector("header");
+// +++ DOM elements +++
 const hello = document.getElementById("hello");
 const intro = document.getElementById("intro");
 const stack = document.getElementById("stack");
+const frontend = document.getElementById("frontend");
+const backend = document.getElementById("backend"); 
+const git = document.getElementById("git");
 const skillSection = document.getElementById("skill-desc-section");
-const projectsSection = document.getElementById("projects");
 
-if (!projects) {
-  header.style.display = "none";
-  projectsSection.style.display = "none";
 
-} else {  
-  header.style.display = "flex";
-  hello.style.display = "none";
-  intro.style.display = "none";  
-  stack.style.display = "none";
-  skillSection.style.display = "none";
+const projectsButton = document.getElementById("btn-projects");
+
+projectsButton.addEventListener("click", () => {
+  hideProfile();
+});
+
+const hideProfile = ()=> {
+  console.log("hideProfile called ");
+  hello.classList.add("hideLeft");
+  intro.classList.add("hideTop");
+  stack.classList.add("hideRight");
+  frontend.classList.add("hideLeft");
+  backend.classList.add("hideLeft");
+  git.classList.add("hideLeft");
+  skillSection.classList.add("hideRight");
+  setTimeout(() => {
+    document.location.href = 'projects.html'
+  }, 500);
+  
 }
-
-
 
 
 // +++ event listeners +++
@@ -31,12 +40,8 @@ descHtml.forEach((item) => {
   item.addEventListener("mouseover", () => {
     skillsDescMove(15);
     const skill = document.getElementById("htmlcss");
-    skill.addEventListener("mouseover", () => {
-      
-    });
-    skill.addEventListener("mouseout", () => {
-
-    });
+    skill.addEventListener("mouseover", () => {});
+    skill.addEventListener("mouseout", () => {});
   });
 });
 const descVue = document.querySelectorAll(".btn-vue");
@@ -47,13 +52,13 @@ descVue.forEach((item) => {
 });
 const descReact = document.getElementById("btn-react");
 descReact.addEventListener("mouseover", () => {
-    skillsDescMove(-92);
-  });
+  skillsDescMove(-92);
+});
 
 const descExpress = document.getElementById("btn-express");
 descExpress.addEventListener("mouseover", () => {
-    skillsDescMove(-143);
-  });
+  skillsDescMove(-143);
+});
 
 const descSql = document.getElementById("btn-sql");
 descSql.addEventListener("mouseover", () => {

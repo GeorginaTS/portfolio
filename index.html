@@ -2,80 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-4V1G7YKE4L"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-4V1G7YKE4L");
-    </script>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-T8CM9LVT");
-    </script>
-    <!-- End Google Tag Manager -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <title>Georgina Tomas - Portfolio</title>
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-T8CM9LVT"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+
     <main>
-      <div>
-        <header id="header">
-          <div>
-            <h4>Georgina Tomas</h4>
-          </div>
-          <ul>
-            <li>
-              <img src="./assets/img/logos/javascript.svg" alt="Javascript" />
-            </li>
-            <li>
-              <img
-                src="./assets/img/logos/typescript-official-svgrepo-com.svg"
-                alt="Typescript"
-              />
-            </li>
-            <li>
-              <img
-                src="./assets/img/logos/node-js-svgrepo-com.svg"
-                alt="NodeJS"
-              />
-            </li>
-            <li>
-              <img
-                src="./assets/img/logos/npm-svgrepo-com.svg"
-                alt="npm packages"
-              />
-            </li>
-          </ul>
-        </header>
-        <section id="hello">
+        <section id="hello" class="showRight">
           <!-- <h1 id="welcome">Welcome</h1> -->
           <div>
             <img
@@ -100,7 +34,7 @@
             /></a>
           </div>
         </section>
-        <section id="intro">
+        <section id="intro" class="showBottom">
           <article>
             <h4>I'm Georgina, FULL STACK DEVELOPER</h4>
             <p>
@@ -139,8 +73,7 @@
             </ul>
           </article>
         </section>
-        <section id="stack">
-          <h4>My Stack</h4>
+        <section id="stack" class="showLeft">
           <ul>
             <li>
               <img src="./assets/img/logos/javascript.svg" alt="Javascript" />
@@ -170,7 +103,7 @@
             Projects <span></span><span></span><span></span><span></span>
           </button>
         </section>
-        <section id="frontend" class="skills_box">
+        <section id="frontend" class="skills_box showRight">
           <h4>Frontend</h4>
           <ul>
             <li class="btn-html">
@@ -202,7 +135,7 @@
             </li>
           </ul>
         </section>
-        <section id="backend" class="skills_box">
+        <section id="backend" class="skills_box showRight">
           <h4>Backend</h4>
           <ul>
             <li id="btn-express">
@@ -231,7 +164,7 @@
             </li>
           </ul>
         </section>
-        <section id="git" class="skills_box">
+        <section id="git" class="skills_box showRight">
           <h4>Version Control / Deployment / Cloud</h4>
           <ul>
             <li id="btn-git">
@@ -257,7 +190,7 @@
             </li>
           </ul>
         </section>
-        <section id="skill-desc-section">
+        <section id="skill-desc-section" class="showTop">
           <div class="shadow-overlay"></div>
           <div id="skill-boxes">
             <article id="htmlcss">
@@ -371,10 +304,11 @@
             <article id="azure">
               <h3>Azure</h3>
               <p>
-                I have foundational knowledge of Microsoft Azure and its core
-                services. I'm familiar with cloud computing concepts, resource
-                management, and deploying web applications within the Azure
-                ecosystem.
+                I gained foundational knowledge of Microsoft Azure through the
+                Cloud Deploying course at the Autonomous University of
+                Barcelona, part of the DigiAdvance project. The training focused
+                on deploying and managing cloud infrastructure using modern
+                tools and real-world scenarios.
               </p>
             </article>
             <article id="Docker">
@@ -389,11 +323,9 @@
             </article>
           </div>
         </section>
-        <section id="projects">Projects</section>
-      </div>
     </main>
     <script src="index.js"></script>
-    <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
-    <script src="https://files.bpcontent.cloud/2025/02/18/06/20250218063921-88YIXUEN.js"></script>
+    <!-- <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/02/18/06/20250218063921-88YIXUEN.js"></script> -->
   </body>
 </html>
