@@ -1,6 +1,5 @@
 @import "./css/intro.css";
 @import "./css/skills.css";
-@import "./css/projects.css";
 @import "./css/animation.css";
 
 * {
@@ -63,7 +62,6 @@ h4 {
 }
 main {
   max-width: 1280px;
-  min-height: 700px;
   max-height: fit-content;
   padding: 1rem;
   display: grid;
@@ -83,36 +81,7 @@ a {
 ul {
   list-style: none;
 }
-/* Mini Header -> project section*/
-header {
-  height: 3.2rem;
-  grid-column: span 6;
-  background-color: var(--color-primary);
-  color: var(--color-text);
-  border-radius: 0.4rem;
-  box-shadow: 0px 0px 0.4rem var(--color-primary);
-  display: none;
-  justify-content:space-between;
-  align-items: center;
-  padding: 1rem;
-}
-header img {
-  width: 2.6rem;
-}
-header ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.6rem;
-}
-header ul li {
-  background-color: white;
-  padding: 0.2rem;
-  border-radius: 0.4rem;
-  display: flex;  
-  justify-content: center;
-  align-items: center;
-}
+
 /* Button projects */
 button{
     width:100%;

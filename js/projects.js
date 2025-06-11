@@ -2,7 +2,7 @@
 const projectsList = [
     {
         id: 1,
-        name: "Mels del Montnegre",
+        name: "TodoApp",
         description: "A brief description of Project A.",   
         technologies: ["HTML", "CSS", "JavaScript"],
         link: "https://example.com/project-a",
@@ -66,7 +66,6 @@ const projectsList = [
     }
 ]
 
-
 const header = document.querySelector("header");
 const projectsSection = document.getElementById("projects");
 const showProjects = () => {
@@ -83,7 +82,7 @@ const showProjects = () => {
   for (project of projectsList) {
     i++;
     const li = document.createElement("li");
-    li.innerHTML = `<article id ="project${i}" ><h4> ${project.name} <span >${project.description}</span></h4></article>`;
+    li.innerHTML = `<article id ="project${i}" ><h4> ${project.name} </h4><p>${project.description}</p></article>`;
     ul.appendChild(li);
     li.classList.add("skills-box");
     li.classList.add("showLeft");
