@@ -3,66 +3,26 @@ const projectsList = [
     {
         id: 1,
         name: "TodoApp",
-        description: "A brief description of Project A.",   
-        technologies: ["HTML", "CSS", "JavaScript"],
-        link: "https://example.com/project-a",
-        github: "https://github.com/username/project-a"
+        description: "Little Todo App, with Drag and Drop functionality, created with Vue.js, Tailwind, Node.js and Express.",   
+        technologies: ["Vue.js","Tailwind", "Node.js", "Express", "JavaScript"],
+        link: "https://calm-smoke-01af5fd10.6.azurestaticapps.net/#/",
+        github: "https://github.com/GeorginaTS/todo-app"
     },
     {
         id: 2,
         name: "Mels del Montnegre",
-        description: "A brief description of Project B.",
-        technologies: ["Vue.js","Tailwind", "Node.js", "Express"],
-        link: "https://example.com/project-b",
-        github: "https://github.com/username/project-b"             
+        description: "Responsive website for a local business, created with html, css and javascript.",
+        technologies: ["HTML","CSS", "JavaScript"],
+        link: "https://georginats.github.io/mels_montnegre/",
+        github: "https://github.com/GeorginaTS/mels_montnegre"             
     },     
     {
         id: 3,
         name: "FakestoreAPI",
-        description: "A brief description of Project C.",
-        technologies: ["Vue.js","Tailwind", "Node.js", "Express"],
-        link: "https://example.com/project-b",
-        github: "https://github.com/username/project-b"             
-    }, 
-    {
-        id: 4,
-        name: "Portfolio",
-        description: "A brief description of Project D.",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        link: "https://example.com/project-d",
-        github: "https://github.com/username/project-d"
-    },
-    {
-        id: 5,
-        name: "Weather App",
-        description: "A brief description of Project E.",
-        technologies: ["React", "Tailwind", "Node.js", "Express"],
-        link: "https://example.com/project-e",
-        github: "https://github.com/username/project-e"
-    },
-    {
-        id: 6,
-        name: "E-commerce",
-        description: "A brief description of Project F.",
-        technologies: ["React", "Tailwind", "Node.js", "Express"],
-        link: "https://example.com/project-f",
-        github: "https://github.com/username/project-f"
-    },
-    {
-        id: 7,
-        name: "Blog Platform",
-        description: "A brief description of Project G.",
-        technologies: ["Vue.js", "Tailwind", "Node.js", "Express"],
-        link: "https://example.com/project-g",
-        github: "https://github.com/username/project-g"             
-    },
-    {
-        id: 8,
-        name: "Chat Application",
-        description: "A brief description of Project H.",
-        technologies: ["React", "Tailwind", "Node.js", "Express"],
-        link: "https://example.com/project-h",
-        github: "https://github.com/username/project-h"
+        description: "Vue.js application that consumes the Fakestore API, displaying products, searching and filtering.",
+        technologies: ["Vue.js","Tailwind", "JavaScript"],
+        link: "https://ashy-ground-02cd81d10.6.azurestaticapps.net/",
+        github: "https://github.com/GeorginaTS/Vue-project1"             
     }
 ]
 
@@ -82,7 +42,7 @@ const showProjects = () => {
   for (project of projectsList) {
     i++;
     const li = document.createElement("li");
-    li.innerHTML = `<article id ="project${i}" ><h4> ${project.name} </h4><p>${project.description}</p><a href="${project.link}" target="_blank">Link</a> - <a href="${project.github}" target="_blank">Github</a></article>`;
+    li.innerHTML = `<article id ="project${i}" ><h4> ${project.name} </h4><hr><p>${project.description}</p><hr><div><a href="${project.link}" target="_blank"><img src="./assets/img/logos/browser-window-2-svgrepo-com.svg" alt="New Browser" /></a> <a href="${project.github}" target="_blank"><img src="./assets/img/logos/github-142-svgrepo-com.svg" alt="Github" /></a></div></article>`;
     ul.appendChild(li);
     li.classList.add("skills-box");
     li.classList.add("showLeft");
