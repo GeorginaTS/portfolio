@@ -42,7 +42,13 @@ const showProjects = () => {
   for (project of projectsList) {
     i++;
     const li = document.createElement("li");
-    li.innerHTML = `<article id ="project${i}" ><h4> ${project.name} </h4><hr><p>${project.description}</p><hr><div><a href="${project.link}" target="_blank"><img src="./assets/img/logos/browser-window-2-svgrepo-com.svg" alt="New Browser" /></a> <a href="${project.github}" target="_blank"><img src="./assets/img/logos/github-142-svgrepo-com.svg" alt="Github" /></a></div></article>`;
+    li.innerHTML = `<article id ="project${i}">
+                    <div class="project-img">
+                        <img src="./assets/img/projects/project${project.id}.png" alt="${project.name}" />
+                        <h4> <span>${project.name} </span></h4></div>
+                        <p>${project.description}</p><hr>
+                        <div class="project-links"><a href="${project.link}" target="_blank"><img src="./assets/img/logos/browser-window-2-svgrepo-com.svg" alt="New Browser" /></a> <a href="${project.github}" target="_blank"><img src="./assets/img/logos/github-142-svgrepo-com.svg" alt="Github" /></a></div>
+                        </article>`;
     ul.appendChild(li);
     li.classList.add("skills-box");
     li.classList.add("showLeft");
