@@ -10,7 +10,7 @@ const projectsList = [
     },
     {
         id: 2,
-        name: "TodoApp",
+        name: "Mels del Montnegre",
         description: "A brief description of Project B.",
         technologies: ["Vue.js","Tailwind", "Node.js", "Express"],
         link: "https://example.com/project-b",
@@ -18,7 +18,7 @@ const projectsList = [
     },     
     {
         id: 3,
-        name: "Trima",
+        name: "FakestoreAPI",
         description: "A brief description of Project C.",
         technologies: ["Vue.js","Tailwind", "Node.js", "Express"],
         link: "https://example.com/project-b",
@@ -82,7 +82,7 @@ const showProjects = () => {
   for (project of projectsList) {
     i++;
     const li = document.createElement("li");
-    li.innerHTML = `<article id ="project${i}" ><h4> ${project.name} </h4><p>${project.description}</p></article>`;
+    li.innerHTML = `<article id ="project${i}" ><h4> ${project.name} </h4><p>${project.description}</p><a href="${project.link}" target="_blank">Link</a> - <a href="${project.github}" target="_blank">Github</a></article>`;
     ul.appendChild(li);
     li.classList.add("skills-box");
     li.classList.add("showLeft");
