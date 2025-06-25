@@ -31,9 +31,9 @@ const projectsSection = document.getElementById("projects");
 const showProjects = () => {
   console.log("showProjects called");
   header.style.display = "flex";  
-  header.classList.add("showLeft");
+  //header.classList.add("showLeft");
   projectsSection.style.display = "flex";
-  projectsSection.classList.add("showTop");
+ // projectsSection.classList.add("showTop");
 
   const ul = document.createElement("ul");
   projectsSection.appendChild(ul);
@@ -51,7 +51,12 @@ const showProjects = () => {
                         </article>`;
     ul.appendChild(li);
     li.classList.add("skills-box");
-    li.classList.add("showLeft");
+    li.classList.add("showBottom"); 
   }
 };
 showProjects();
+
+const avatar = document.getElementById("avatar");
+avatar.addEventListener("click", () => {
+  document.location.href = "index.html";
+});

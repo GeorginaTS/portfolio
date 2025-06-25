@@ -11,23 +11,24 @@ const skillSection = document.getElementById("skill-desc-section");
 const projectsButton = document.getElementById("btn-projects");
 
 projectsButton.addEventListener("click", () => {
-  hideProfile();
+  document.location.href = 'projects.html'
+  // hideProfile();
 });
 
-const hideProfile = ()=> {
-  console.log("hideProfile called ");
-  hello.classList.add("hideLeft");
-  intro.classList.add("hideTop");
-  stack.classList.add("hideRight");
-  frontend.classList.add("hideLeft");
-  backend.classList.add("hideLeft");
-  git.classList.add("hideLeft");
-  skillSection.classList.add("hideRight");
-  setTimeout(() => {
-    document.location.href = 'projects.html'
-  }, 500);
+// const hideProfile = ()=> {
+//   console.log("hideProfile called ");
+//   hello.classList.add("hideLeft");
+//   intro.classList.add("hideTop");
+//   stack.classList.add("hideRight");
+//   frontend.classList.add("hideLeft");
+//   backend.classList.add("hideLeft");
+//   git.classList.add("hideLeft");
+//   skillSection.classList.add("hideRight");
+//   setTimeout(() => {
+//     document.location.href = 'projects.html'
+//   }, 500);
   
-}
+// }
 
 
 // +++ event listeners +++

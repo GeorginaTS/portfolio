@@ -1,3 +1,5 @@
+
+
 @import "./css/intro.css";
 @import "./css/skills.css";
 @import "./css/animation.css";
@@ -188,3 +190,13 @@ button:hover{
 button:hover span{
     animation-play-state: paused;
 }
+@view-transition {
+  navigation: auto;
+  duration: 0.5s;
+  easing: ease-in-out;
+}
+
+::view-transition-group(*) {
+  animation-duration: 1s;
+}
+

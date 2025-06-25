@@ -13,11 +13,12 @@ header {
   align-items: center;
   padding: 0.4rem;
 }
-header img {
+#avatar {
   width: 2.6rem;
   height: 2.6rem;
   object-fit: cover;
   border-radius: 50%;
+  cursor: pointer;
 }
 header div {
   display: flex;
@@ -162,3 +163,4 @@ article >hr {
 .project-links {
   padding: 0.6rem;
 }
+
