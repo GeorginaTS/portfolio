@@ -1,12 +1,12 @@
 const projectsList = [
   {
-    id: 1,
-    name: "TodoApp",
+    id: 3,
+    name: "FakestoreAPI",
     description:
-      "Little Todo App, with Drag and Drop functionality, created with Vue.js, Tailwind, Node.js and Express.",
-    technologies: ["Vue.js", "Tailwind", "Node.js", "Express", "JavaScript"],
-    link: "https://calm-smoke-01af5fd10.6.azurestaticapps.net/#/",
-    github: "https://github.com/GeorginaTS/todo-app",
+      "Vue.js application that consumes the Fakestore API, displaying products, searching and filtering.",
+    technologies: ["Vue.js", "Tailwind", "JavaScript"],
+    link: "https://ashy-ground-02cd81d10.6.azurestaticapps.net/",
+    github: "https://github.com/GeorginaTS/Vue-project1",
   },
   {
     id: 2,
@@ -18,22 +18,49 @@ const projectsList = [
     github: "https://github.com/GeorginaTS/mels_montnegre",
   },
   {
-    id: 3,
-    name: "FakestoreAPI",
+    id: 1,
+    name: "TodoApp",
     description:
-      "Vue.js application that consumes the Fakestore API, displaying products, searching and filtering.",
-    technologies: ["Vue.js", "Tailwind", "JavaScript"],
-    link: "https://ashy-ground-02cd81d10.6.azurestaticapps.net/",
-    github: "https://github.com/GeorginaTS/Vue-project1",
+      "Little Todo App, with Drag and Drop functionality, created with Vue.js, Tailwind, Node.js and Express.",
+    technologies: ["Vue.js", "Tailwind", "Node.js", "Express", "JavaScript"],
+    link: "https://calm-smoke-01af5fd10.6.azurestaticapps.net/#/",
+    github: "https://github.com/GeorginaTS/todo-app",
   },
   {
     id: 4,
     name: "Caseus",
     description:
       "A comprehensive hybrid application built with Ionic 8 and Angular 20 for artisan cheese enthusiasts. Caseus enables users to document their cheese-making journey, explore global cheese varieties, and connect with a vibrant community of cheese makers and enthusiasts.",
-    technologies: ["Angular.js", "Tailwind", "Typescript", "Ionic", "Express", "Node.js", "MongoDB", "firebase", "Leaflet"],
+    technologies: [
+      "Angular.js",
+      "Tailwind",
+      "Typescript",
+      "Ionic",
+      "Express",
+      "Node.js",
+      "MongoDB",
+      "firebase",
+      "Leaflet",
+    ],
     link: "https://cheese-29925.web.app/",
     github: "https://github.com/GeorginaTS/ionic-cheese",
+  },
+  {
+    id: 5,
+    name: "Boletus",
+    description:
+      "A modern hybrid mobile application built with Ionic React and TypeScript for mushroom enthusiasts to discover, track, and share mushroom locations with an integrated Google Maps system and comprehensive location management.",
+    technologies: [
+      "React.js",
+      "Typescript",
+      "Ionic",
+      "Capacitor",
+      "Firebase Authentication",
+      "Firebase Storage",
+      "GoogleMaps API",
+    ],
+    link: "https://boletus-eb305.web.app/",
+    github: "https://github.com/GeorginaTS/boletus",
   },
 ];
 
