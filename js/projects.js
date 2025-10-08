@@ -1,45 +1,56 @@
-
 const projectsList = [
-    {
-        id: 1,
-        name: "TodoApp",
-        description: "Little Todo App, with Drag and Drop functionality, created with Vue.js, Tailwind, Node.js and Express.",   
-        technologies: ["Vue.js","Tailwind", "Node.js", "Express", "JavaScript"],
-        link: "https://calm-smoke-01af5fd10.6.azurestaticapps.net/#/",
-        github: "https://github.com/GeorginaTS/todo-app"
-    },
-    {
-        id: 2,
-        name: "Mels del Montnegre",
-        description: "Responsive website for a local business, created with html, css and javascript.",
-        technologies: ["HTML","CSS", "JavaScript"],
-        link: "https://georginats.github.io/mels_montnegre/",
-        github: "https://github.com/GeorginaTS/mels_montnegre"             
-    },     
-    {
-        id: 3,
-        name: "FakestoreAPI",
-        description: "Vue.js application that consumes the Fakestore API, displaying products, searching and filtering.",
-        technologies: ["Vue.js","Tailwind", "JavaScript"],
-        link: "https://ashy-ground-02cd81d10.6.azurestaticapps.net/",
-        github: "https://github.com/GeorginaTS/Vue-project1"             
-    }
-]
+  {
+    id: 1,
+    name: "TodoApp",
+    description:
+      "Little Todo App, with Drag and Drop functionality, created with Vue.js, Tailwind, Node.js and Express.",
+    technologies: ["Vue.js", "Tailwind", "Node.js", "Express", "JavaScript"],
+    link: "https://calm-smoke-01af5fd10.6.azurestaticapps.net/#/",
+    github: "https://github.com/GeorginaTS/todo-app",
+  },
+  {
+    id: 2,
+    name: "Mels del Montnegre",
+    description:
+      "Responsive website for a local business, created with html, css and javascript.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    link: "https://georginats.github.io/mels_montnegre/",
+    github: "https://github.com/GeorginaTS/mels_montnegre",
+  },
+  {
+    id: 3,
+    name: "FakestoreAPI",
+    description:
+      "Vue.js application that consumes the Fakestore API, displaying products, searching and filtering.",
+    technologies: ["Vue.js", "Tailwind", "JavaScript"],
+    link: "https://ashy-ground-02cd81d10.6.azurestaticapps.net/",
+    github: "https://github.com/GeorginaTS/Vue-project1",
+  },
+  {
+    id: 4,
+    name: "Caseus",
+    description:
+      "A comprehensive hybrid application built with Ionic 8 and Angular 20 for artisan cheese enthusiasts. Caseus enables users to document their cheese-making journey, explore global cheese varieties, and connect with a vibrant community of cheese makers and enthusiasts.",
+    technologies: ["Angular.js", "Tailwind", "Typescript", "Ionic", "Express", "Node.js", "MongoDB", "firebase", "Leaflet"],
+    link: "https://cheese-29925.web.app/",
+    github: "https://github.com/GeorginaTS/ionic-cheese",
+  },
+];
 
 const header = document.querySelector("header");
 const projectsSection = document.getElementById("projects");
 const showProjects = () => {
   console.log("showProjects called");
-  header.style.display = "flex";  
+  header.style.display = "flex";
   //header.classList.add("showLeft");
   projectsSection.style.display = "flex";
- // projectsSection.classList.add("showTop");
+  // projectsSection.classList.add("showTop");
 
   const ul = document.createElement("ul");
   projectsSection.appendChild(ul);
 
   let i = 0;
-  for (project of projectsList) {
+  for (project of projectsList.reverse()) {
     i++;
     const li = document.createElement("li");
     li.innerHTML = `<article id ="project${i}">
@@ -51,7 +62,7 @@ const showProjects = () => {
                         </article>`;
     ul.appendChild(li);
     li.classList.add("skills-box");
-    li.classList.add("showBottom"); 
+    li.classList.add("showBottom");
   }
 };
 showProjects();
